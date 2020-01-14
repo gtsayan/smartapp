@@ -5,9 +5,11 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+@import "../blocks/modules/intro/intro";
 
 
 * {
+    box-sizing: border-box;
     // border: 1px solid red;
 }
 
