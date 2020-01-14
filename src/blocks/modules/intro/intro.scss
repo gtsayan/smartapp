@@ -3,6 +3,7 @@
     display: flex;
     color: #ffffff;
 
+
 }
 
 .intro__info {
@@ -58,9 +59,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    content: url(../../../img/intro/Phone.png);
-    width: 29px;
-    height: 52px;
+    background: url(../../../img/intro/Phone.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 70px;
+    height: 76px;
     padding: 12px 20px;
 
 
@@ -68,11 +72,29 @@
 
 .now-available__text {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     font-family: Georgia;
     font-size: 22px;
     font-weight: 400;
     line-height: 26.4px;
     text-transform: uppercase;
+    text-align: center;
 }
+
+.subscribe {
+    width: 100%;
+}
+
+.subscribe__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__title {}
+
+.subscribe__text {}
+
+.btn {}
+
+.btn--short {}
