@@ -40,11 +40,12 @@
     padding: 55px 0;
     text-align: right;
 
+
 }
 
 .header__nav-item {
     color: #666666;
-    font-family: Georgia;
+    text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     line-height: 14px;
@@ -52,6 +53,7 @@
     padding: 0 20px;
     border-left: 1px solid #666;
     position: relative;
+    white-space: nowrap;
 
     &:last-child {
         padding-right: 0;
@@ -79,5 +81,91 @@
     &:active {
         color: #ffffff;
 
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+        width: 280px;
+        max-height: 124px;
+        border-radius: 0;
+        position: static;
+        background-color: $red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .header__nav {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 20px;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+
+    }
+
+    .header__nav-item {
+        border: none;
+        text-align: center;
+        padding: 10px 0;
+
+        &:hover::before {
+            color: #ffffff;
+            content: "";
+            width: 70%;
+            height: 4px;
+            background-color: $red;
+            top: -7px;
+            position: absolute;
+        }
+    }
+
+}
+
+@media (max-width: 710px) {
+    .header {
+        position: fixed;
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    .header__nav-item {
+        border: none;
+        text-align: center;
+        padding: 10px 0;
+
+        &:hover::before {
+            color: #ffffff;
+            content: "";
+            width: 4px;
+            height: 67%;
+            background-color: $red;
+            right: -10px;
+            top: 2px;
+            position: absolute;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .header__title {
+
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .header__logo {
+        width: 230px;
     }
 }
