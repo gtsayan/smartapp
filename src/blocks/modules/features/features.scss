@@ -109,12 +109,14 @@
 
     border-image-slice: 1;
     position: relative;
+    z-index: 10;
 
     &::before {
         position: absolute;
         content: url(../../../img/benefits/Left_arrow.svg);
         top: 25%;
         left: -10px;
+        z-index: 10;
     }
 
     &::after {
@@ -122,6 +124,7 @@
         content: url(../../../img/benefits/Right_arrow.svg);
         top: 25%;
         right: 20px;
+        z-index: 10;
     }
 
 

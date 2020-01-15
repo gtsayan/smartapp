@@ -2,6 +2,7 @@
     position: relative;
     margin-bottom: 35px;
     border-bottom: 1px solid #666;
+    background-color: #1f2531;
 
 }
 
@@ -16,6 +17,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+
 }
 
 .header__title {
@@ -89,6 +91,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
 
     .header__logo {
@@ -105,13 +108,11 @@
     }
 
     .header__nav {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
-        grid-row-gap: 20px;
-        justify-content: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
         padding: 0;
-        margin: 0 auto;
+
 
     }
 
@@ -138,6 +139,9 @@
         position: fixed;
         width: 95%;
         margin-bottom: 50px;
+        flex-direction: row;
+        z-index: 100;
+
     }
 
     .header__nav-item {
@@ -156,9 +160,7 @@
             position: absolute;
         }
     }
-}
 
-@media (max-width: 710px) {
     .header__title {
 
         font-size: 32px;
