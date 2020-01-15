@@ -62,7 +62,11 @@
         border-left: none
     }
 
-    &:active::before {
+    &:hover {
+        color: #ffffff;
+    }
+
+    &:hover::before {
         color: #ffffff;
         content: "";
         width: 70%;
@@ -72,7 +76,7 @@
         position: absolute;
     }
 
-    &:hover {
+    &:active {
         color: #ffffff;
 
     }
